@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Form } from 'react-bootstrap';
-import { Search } from 'react-bootstrap-icons';
-
+import { Typeahead } from 'react-bootstrap-typeahead';
+// import { useHistory } from "react-router-dom";
 import './Hero.css';
 
+// const history = useHistory();
+
 const Hero = () => {
+  const [singleSelections, setSingleSelections] = useState('');
+  const options = ['Marquês', 'Teste'];
+
+  const onChange = (singleSelections) => {
+    const url = `/restaurants/${singleSelections}`;
+    console.log(url, singleSelections, window.location.pathname);
+    if (!!singleSelections && window.location.pathname !== url) {
+      window.location = url;
+    }
+  };
+  
   return (
     <div className="hero">
       <Container>
@@ -16,12 +29,19 @@ const Hero = () => {
         <Row>
           <div className="hero-search">
             <Form.Group>
-              <Form.Control size="md" type="text" placeholder="&#x1F50E;" />
+              <Form.Label>Single Selection</Form.Label>
+              <Typeahead
+                id="basic-typeahead-single"
+                labelKey="name"
+                onChange={onChange}
+                options={options}
+                placeholder="Choose a state..."
+                selected={singleSelections}
+              />
             </Form.Group>
           </div>
         </Row>
       </Container>
-      <img src="/background.png" alt="hero background" />
     </div>
   );
 };
