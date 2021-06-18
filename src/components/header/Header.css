@@ -1,0 +1,19 @@
+.header {
+  background-color: #02B789;
+  padding: 30px 0;
+}
+
+.header-links .navbar {
+  justify-content: flex-end;
+}
+
+.header-links a {
+  color: #343434 !important;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.header-text {
+  font-size: 30px;
+  max-width: 470px;
+}

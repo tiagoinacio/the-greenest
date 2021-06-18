@@ -1,0 +1,45 @@
+footer {
+  height: 164px;
+  background-color: #02B789;
+  font-size: 16px;
+}
+
+.footer-content {
+  padding-top: 25px;
+}
+
+.redes-sociais {
+  text-align: right;
+}
+
+.redes-sociais-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 55px;
+}
+
+footer button.mb-2 {
+  margin-bottom: 0 !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  background-color: #6B2E5C;
+}
+
+footer input, footer button {
+  margin-top: 10px;
+}
+
+
+.newsletter {
+  font-size: 12px;
+}
+
+.terms-and-conditions, .copyright {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.terms-and-conditions {
+  text-align: right;
+}

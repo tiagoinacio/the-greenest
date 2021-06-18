@@ -1,0 +1,33 @@
+.hero {
+  width: 100%;
+  text-align: center;
+  height: 560px;
+  padding-top: 50px;
+  background-color: #02B789;
+}
+
+.hero img {
+  margin: auto;
+  height: 100%;
+  width: auto;
+}
+
+.hero-text {
+  position: absolute;
+  font-size: 30px;
+  text-align: left;
+  padding: 0;
+  max-width: 470px;
+  margin-top: 267px;
+  font-weight: bold;
+}
+
+.hero-search {
+  position: absolute;
+  font-size: 30px;
+  text-align: left;
+  padding: 0;
+  max-width: 470px;
+  margin-top: 403px;
+  height: 52px;
+}
