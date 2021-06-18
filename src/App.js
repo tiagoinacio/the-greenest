@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import Home from './pages/home/Home';
+import Search from './pages/search/Search';
 import Restaurant from './pages/restaurant/Restaurant'
 
 function App() {
@@ -16,9 +17,9 @@ function App() {
             <div>Login</div>
           </Route>
           <Route path="/search">
-            <div>Search</div>
+            <Search />
           </Route>
-          <Route path="/restaurants/:restaurant">
+          <Route path="/restaurants/:id">
             <Restaurant />
           </Route>
           <Route path="/">

@@ -1,23 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Form } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
-// import { useHistory } from "react-router-dom";
 import './Hero.css';
-
-// const history = useHistory();
+import restaurants from '../../restaurants';
 
 const Hero = () => {
-  const [singleSelections, setSingleSelections] = useState('');
-  const options = ['Marquês', 'Teste'];
+  const [selected, setSelected] = useState(null);
+  const options = Object.keys(restaurants).map(key => restaurants[key].name);
 
-  const onChange = (singleSelections) => {
-    const url = `/restaurants/${singleSelections}`;
-    console.log(url, singleSelections, window.location.pathname);
-    if (!!singleSelections && window.location.pathname !== url) {
+  const onChange = (key) => {
+    const index = Object.keys(restaurants).find(option => {
+      return restaurants[option].name === key[0]
+    });
+    const url = `/restaurants/${restaurants[index].id}`;
+    console.log({ index })
+    if (!!index && window.location.pathname !== url) {
       window.location = url;
     }
   };
-  
+
+  const onKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      if (options.includes(selected)) {
+        onChange(selected);
+      } else {
+        window.location = `/search/${selected}`;
+      }
+    }
+  }
+
   return (
     <div className="hero">
       <Container>
@@ -29,14 +40,15 @@ const Hero = () => {
         <Row>
           <div className="hero-search">
             <Form.Group>
-              <Form.Label>Single Selection</Form.Label>
               <Typeahead
+                emptyLabel=""
+                allowNew
                 id="basic-typeahead-single"
                 labelKey="name"
+                onKeyDown={onKeyDown}
                 onChange={onChange}
+                onInputChange={setSelected}
                 options={options}
-                placeholder="Choose a state..."
-                selected={singleSelections}
               />
             </Form.Group>
           </div>

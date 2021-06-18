@@ -67,7 +67,7 @@ const Home = () => (
       <Row className="certificados-logo">
         <Col xs lg="4">
           <Row>
-            <img src="/cert01.png" alt="Associação Portuguesa de Certificação"></img>
+            <img src="/apcer.png" alt="Associação Portuguesa de Certificação"></img>
           </Row>
           <p>
             Associação Portuguesa de Certificação
@@ -83,7 +83,7 @@ const Home = () => (
         </Col>
         <Col xs lg="4">
           <Row>
-            <img src="/cert03.png" alt="Certificação Planeta Verde"></img>
+            <img src="/green-globe.png" alt="Certificação Planeta Verde"></img>
           </Row>
           <p>
             Certificação Planeta Verde

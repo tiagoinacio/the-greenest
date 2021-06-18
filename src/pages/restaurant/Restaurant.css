@@ -1,0 +1,41 @@
+.img-localizacao {
+  width: 20px;
+  height: 20px;
+}
+
+.nossa-sustentabilidade-detalhes, .horario-detalhe, .comentario-detalhe {
+  font-size: 1.563rem;
+}
+
+.h-nome {
+  font-size: 2.188rem;
+}
+
+.nome-localizaco, .name-comentarios {
+  font-size: 1.875rem;
+}
+
+.nome-localizaco svg {
+  fill: #6B2E4A;
+}
+
+button {
+  padding: 0.70rem;
+  font-size: 1.875rem;
+  text-align: center;
+  justify-content: center;
+  background-color: #6b2e5c;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 0px;
+}
+
+.localizacao-comentario {
+  font-size: 1.375rem;
+}
+
+@media (max-width: 577px) {
+  .horario {
+    display: none;
+  }
+}

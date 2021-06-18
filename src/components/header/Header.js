@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Col, Row, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -8,6 +9,7 @@ const Header = () => {
       <Container>
         <Row className="header-content">
           <Col xs lg="3">
+            <Link to="/">
               <img
                 alt=""
                 src="/logo.svg"
@@ -15,6 +17,7 @@ const Header = () => {
                 height="62"
                 className="d-inline-block align-top"
               />{' '}
+            </Link>
           </Col>
           <Col xs lg="9" className="header-links">
             <Navbar>
