@@ -6,14 +6,14 @@ import restaurants from '../../restaurants';
 
 const Hero = () => {
   const [selected, setSelected] = useState(null);
-  const options = Object.keys(restaurants).map(key => restaurants[key].name);
+  const options = []; //Object.keys(restaurants).map(key => restaurants[key].name);
 
   const onChange = (key) => {
     const index = Object.keys(restaurants).find(option => {
       return restaurants[option].name === key[0]
     });
     const url = `/restaurants/${restaurants[index].id}`;
-    console.log({ index })
+
     if (!!index && window.location.pathname !== url) {
       window.location = url;
     }
@@ -42,7 +42,7 @@ const Hero = () => {
             <Form.Group>
               <Typeahead
                 emptyLabel=""
-                allowNew
+                // allowNew
                 id="basic-typeahead-single"
                 labelKey="name"
                 onKeyDown={onKeyDown}

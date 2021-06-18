@@ -1,10 +1,16 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import Hero from '../../components/hero/Hero';
 import Carousel from '../../components/carousel/Carousel';
 import './Home.css';
+import { ReactComponent as Logo } from '../../assets/svgs/thegreenest01.svg';
+import { ReactComponent as Android } from '../../assets/svgs/android.svg';
+import { ReactComponent as IOS } from '../../assets/svgs/ios.svg';
+import { ReactComponent as At } from '../../assets/svgs/at.svg';
+import { ReactComponent as Phone } from '../../assets/svgs/phone.svg';
+import { ReactComponent as Email } from '../../assets/svgs/mail.svg';
 
 const Home = () => (
   <div className="home">
@@ -63,7 +69,7 @@ const Home = () => (
           Alguns dos restaurantes destinguem-se com a aplicação de certificados que dão 100% confiança na sua qualidade e no seu empenho para a sustentabilidade.
         </Col>
       </Row>
-      
+
       <Row className="certificados-logo">
         <Col xs lg="4">
           <Row>
@@ -92,8 +98,56 @@ const Home = () => (
       </Row>
 
     </Container>
+
+
+    <Row className="restaurante-greenest">
+      <Container>
+        <h2>TORNA O TEU RESTAURANTE GREENEST</h2>
+        <p>Se praticas boas práticas para tornares o teu restaurante mais sustentável e queres ter o teu restaurante como uma referência Greenest, então sabe mais como te podes juntar à nossa essência e clica em saber mais para fazer parte da nossa comunidade.</p>
+        <div className="button-container">
+          <Button>Saber Mais</Button>
+        </div>
+      </Container>
+    </Row>
+
+    <Row className="segue-restaurantes">
+      <Container>
+        <h2>SEGUE OS RESTAURANTES SUSTENTÁVEIS NA NOSSA APP</h2>
+
+        <Row>
+
+          <Col xs lg="5">
+            <Logo />
+          </Col>
+          <Col xs lg="2" />
+          <Col xs lg="5" className="mobile-platforms">
+            <Row><IOS /></Row>
+            <Row><Android /></Row>
+          </Col>
+
+        </Row>
+      </Container>
+    </Row>
+
+
+    <Row className="contacta-nos">
+      <Container>
+        <Row>
+        <Col xs lg="6">
+          <h2>CONTACTA-NOS!</h2>
+        </Col>
+
+        <Col xs lg="6">
+          <Row><div className="contacts-row"><At /><span>hello@thegreenest.eu</span></div></Row>
+          <Row><div className="contacts-row">&nbsp;<Phone /><span>+351 216 789 678</span></div></Row>
+          <Row><div className="contacts-row"><Email /><span>Rua Abade Faria, nº27 1900-007 Lisboa</span></div></Row>
+        </Col>
+        </Row>
+      </Container>
+    </Row>
+
     <Footer />
-  </div>
+  </div >
 );
 
 export default Home;

@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'BrandonText-Regular';
-  src: local('BrandonText-Regular'), url(./assets/fonts/BrandonText-Regular.otf) format('otf');
+  font-family: 'BrandonText-Regular', sans-serif;
+  src: url(./assets/fonts/BrandonText-Regular.otf) format('otf');
 }
 
 @font-face {
-  font-family: 'BrandonText-Bold';
-  src: local('BrandonText-Bold'), url(./assets/fonts/BrandonText-Bold.otf) format('otf');
+  font-family: 'BrandonText-Bold', sans-serif;
+  src: url(./assets/fonts/BrandonText-Bold.otf) format('otf');
 }
 
 @font-face {
-  font-family: 'BrandonText-Black';
-  src: local('BrandonText-Black'), url(./assets/fonts/BrandonText-Black.otf) format('otf');
+  font-family: 'BrandonText-Black', sans-serif;
+  src: url(./assets/fonts/BrandonText-Black.otf) format('otf');
 }
 
-* {
-  font-family: BrandonText-Regular;
+@font-face {
+  font-family: 'Crafter-Regular', sans-serif;
+  src: local('Crafter-Regular'), url(./assets/fonts/Crafter-Regular.otf) format('otf');
 }

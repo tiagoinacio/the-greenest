@@ -37,7 +37,7 @@ const Footer = () => {
           <Col xs lg="6"> </Col>
 
           <Col xs lg="2" className="redes-sociais-icons">
-            <Facebook height="35px" />
+            <Facebook width="165px" />
             <Instagram height="30px" />
           </Col>
         </Row>

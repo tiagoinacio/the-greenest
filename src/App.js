@@ -16,7 +16,7 @@ function App() {
           <Route path="/login">
             <div>Login</div>
           </Route>
-          <Route path="/search">
+          <Route path="/search/:location">
             <Search />
           </Route>
           <Route path="/restaurants/:id">

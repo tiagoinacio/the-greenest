@@ -32,3 +32,61 @@ h5 {
 .certificados-logo p {
   margin-top: 10px;
 }
+
+.restaurante-greenest {
+  padding: 116px 0;
+  display: flex;
+  background-color: #F1E4E8;
+}
+
+.restaurante-greenest h2 {
+  max-width: 380px;
+  margin-bottom: 30px;
+}
+
+.restaurante-greenest p {
+  margin-bottom: 50px;
+}
+
+.restaurante-greenest .button-container {
+  justify-content: center;
+  display: flex;
+}
+
+.restaurante-greenest button {
+  max-width: 300px;
+  padding: 10px 40px;
+  background-color: #6B2E5C;
+}
+
+.segue-restaurantes {
+  padding: 116px 0;
+  background-color: #F5CF47;
+}
+
+.segue-restaurantes h2 {
+  max-width: 380px;
+  margin-bottom: 30px;
+}
+
+.mobile-platforms {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-platforms svg {
+  max-height: 100px;
+}
+
+.contacta-nos {
+  padding: 116px 0;
+}
+
+.contacts-row {
+  margin-bottom: 20px;
+}
+
+.contacta-nos span {
+  margin-left: 20px;
+}
