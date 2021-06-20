@@ -95,7 +95,7 @@ const Search = ({ match: { params } }) => {
               return (
                 <Row>
                   <Col xs lg="6">
-                    <a className="restaurant-link" href={`/restaurants/${list[index].id}`}>
+                    <a className="restaurant-link" href={`/the-greenest/restaurants/${list[index].id}`}>
                       <div className="card-restaurante">
                         <div className="card-imagem">
                           <img src={list[index].images[0]} alt="season" />
@@ -115,7 +115,7 @@ const Search = ({ match: { params } }) => {
                     </a>
                   </Col>
                   {list[index + 1] ? <Col xs lg="6">
-                    <a className="restaurant-link" href={`/restaurants/${list[index + 1].id}`}>
+                    <a className="restaurant-link" href={`/the-greenest/restaurants/${list[index + 1].id}`}>
                       <div className="card-restaurante">
                         <div className="card-imagem">
                           <img src={list[index + 1].images[0]} alt="season" />

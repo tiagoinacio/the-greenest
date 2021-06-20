@@ -14,7 +14,7 @@ const Hero = () => {
     const index = Object.keys(restaurants).find(option => {
       return restaurants[option].name === key[0]
     });
-    const url = `/restaurants/${restaurants[index].id}`;
+    const url = `/the-greenest/restaurants/${restaurants[index].id}`;
 
     if (!!index && window.location.pathname !== url) {
       window.location = url;
@@ -26,7 +26,7 @@ const Hero = () => {
       if (options.includes(selected)) {
         onChange(selected);
       } else {
-        window.location = `/search/${selected}`;
+        window.location = `/the-greenest/search/${selected}`;
       }
     }
   }

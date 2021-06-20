@@ -6,7 +6,7 @@ const Gallery = () => (
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="carousel01.png"
+        src="/the-greenest/carousel01.png"
         alt="First slide"
       />
       <Carousel.Caption>
@@ -15,14 +15,14 @@ const Gallery = () => (
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="carousel01.png"
+        src="/the-greenest/carousel01.png"
         alt="Second slide"
       />
     </Carousel.Item>
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="carousel01.png"
+        src="/the-greenest/carousel01.png"
         alt="Third slide"
       />
 

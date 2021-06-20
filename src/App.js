@@ -13,15 +13,6 @@ function App() {
     <div className="app">
       <Router>
         <Switch>
-          <Route path="/search/:location">
-            <Search />
-          </Route>
-          <Route path="/restaurants/:id">
-            <Restaurant />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
           <Route path="/the-greenest/search/:location">
             <Search />
           </Route>
