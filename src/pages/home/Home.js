@@ -81,7 +81,7 @@ const Home = () => (
         </Col>
         <Col xs lg="4">
           <Row>
-            <img src="/the-greenest/cert02.png" alt="Certificação Agricultura Biológica"></img>
+            <img src="/the-greenest/biologic.png" alt="Certificação Agricultura Biológica"></img>
           </Row>
           <p className="mission-vision-dital-certificados">
             Certificação Agricultura Biológica

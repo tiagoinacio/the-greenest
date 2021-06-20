@@ -1,3 +1,7 @@
+.lista-pesquisa {
+  margin-top: 122px;
+}
+
 .localizacao{
   display: flex;
   align-items: center;
@@ -7,6 +11,7 @@
   margin:2rem 0.5rem 2rem 0rem;
   height: 30px;
   width: auto;
+  fill: #6B2E4A;
 }
 
 .localizacao-detalhe{
@@ -29,6 +34,20 @@
   padding-top: 0.7rem;
 }
 
+.tipo-filtro:first-child {
+  width: 100%;
+  margin-bottom: 122px;
+}
+
+
+@media (max-width: 767px) {
+  .tipo-filtro:first-child {
+    margin-bottom: 1rem;
+  }
+}
+
+
+
 .tipo-filtro .detalhe{
   font-family: 'BrandonText-Regular', sans-serif;
   font-size: 1.1rem;
@@ -36,10 +55,24 @@
   margin-left: 1rem;
 } 
 
-.tipo-filtro .seta-icone img{
+.tipo-filtro .seta-icone svg {
   height:1rem;
   margin-right: 0.8rem;
   margin-top:0.4rem;
+  fill: #6B2E4A;
+}
+
+.select {
+  width: 100%;
+}
+
+.select > div {
+  border-radius: 20px;
+  border-color: black;
+}
+
+.select div span {
+  display: none;
 }
 
 .seta-icone {
