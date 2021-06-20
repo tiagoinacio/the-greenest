@@ -9,18 +9,27 @@ import restaurants from '../../restaurants';
 import { Row, Col } from 'react-bootstrap';
 
 const Search = ({ match: { params } }) => {
+  const term = params.location.toUpperCase();
   const list = Object.keys(restaurants).map((restaurant) => {
-    if (restaurants[restaurant].name.toUpperCase().includes(params.location.toUpperCase())) {
+    if (
+      restaurants[restaurant].name.toUpperCase().includes(term)
+      ||
+      restaurants[restaurant].description.toUpperCase().includes(term)
+      ||
+      restaurants[restaurant].tags.some(tag => tag.toUpperCase().includes(term))
+      ||
+      restaurants[restaurant].address.toUpperCase().includes(term)
+    ) {
       return restaurants[restaurant];
     }
     return null;
   }).filter(x => !!x);
-
+  const numberOfResultsToShow = 4;
   const numberOfRestaurants = list.length;
 
   return (
     <>
-      <Header />
+      <Header theme="light" />
       <div className="lista-pesquisa">
         <div className="container">
           <div className="row">
@@ -76,12 +85,17 @@ const Search = ({ match: { params } }) => {
             </div>
           </div>
 
+          {!numberOfRestaurants ?
+            <h2>Resultados não encontrados.</h2>
+            : null
+          }
+
           {
-            numberOfRestaurants && [Math.round(numberOfRestaurants / 2)].map((_, index) => {
+            numberOfRestaurants ? [Math.round(numberOfRestaurants / 2)].map((_, index) => {
               return (
                 <Row>
                   <Col xs lg="6">
-                    <a href={`/restaurants/${list[index].id}`}>
+                    <a className="restaurant-link" href={`/restaurants/${list[index].id}`}>
                       <div className="card-restaurante">
                         <div className="card-imagem">
                           <img src={list[index].images[0]} alt="season" />
@@ -101,7 +115,7 @@ const Search = ({ match: { params } }) => {
                     </a>
                   </Col>
                   {list[index + 1] ? <Col xs lg="6">
-                    <a href={`/restaurants/${list[index + 1].id}`}>
+                    <a className="restaurant-link" href={`/restaurants/${list[index + 1].id}`}>
                       <div className="card-restaurante">
                         <div className="card-imagem">
                           <img src={list[index + 1].images[0]} alt="season" />
@@ -123,17 +137,22 @@ const Search = ({ match: { params } }) => {
                   }
                 </Row>
               )
-            })}
-
-
+            })
+          : null
+          }
         </div>
-        <div className="botao-mais">
-          <a href="#">Mostrar mais</a>
-        </div>
-        <div className="numero-resultado">
-          6/17
-        </div>
+        {list.length > numberOfResultsToShow ?
+          <>
+            <div className="botao-mais">
+              <a href="#">Mostrar mais</a>
+            </div>
+            <div className="numero-resultado">
+              {numberOfResultsToShow}/{list.length}
+            </div>
+          </>
+          : null}
       </div>
+
 
       <Footer />
     </>

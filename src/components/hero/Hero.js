@@ -7,6 +7,7 @@ import { ReactComponent as Search } from '../../assets/svgs/search.svg';
 
 const Hero = () => {
   const [selected, setSelected] = useState(null);
+  const [isFocus, setFocus] = useState(false);
   const options = []; //Object.keys(restaurants).map(key => restaurants[key].name);
 
   const onChange = (key) => {
@@ -40,7 +41,7 @@ const Hero = () => {
         </Row>
         <Row>
           <div className="hero-search">
-            <Search/>
+            { !isFocus && <Search/> }
             <Form.Group>
               <Typeahead
                 emptyLabel=""
@@ -48,6 +49,8 @@ const Hero = () => {
                 id="basic-typeahead-single"
                 labelKey="name"
                 onKeyDown={onKeyDown}
+                onFocus={setFocus}
+                onBlur={() => setFocus(false)}
                 onChange={onChange}
                 onInputChange={setSelected}
                 options={options}

@@ -17,7 +17,7 @@ const Home = () => (
     <Header />
     <Hero />
     <Container>
-      <Row className="home-title">
+      <Row className="home-title" id="top">
         <Col xs lg="5">
           <h1>OS RESTAURANTES MAIS GREENEST</h1>
         </Col>
@@ -28,7 +28,7 @@ const Home = () => (
         </Col>
       </Row>
 
-      <Row className="home-title">
+      <Row id="sobre-nos" className="home-title">
         <Col xs lg="4">
           <h1>NO QUE ACREDITAMOS</h1>
         </Col>
@@ -58,7 +58,7 @@ const Home = () => (
         </Col>
       </Row>
 
-      <Row className="certificados">
+      <Row id="certificados" className="certificados">
         <Col xs lg="6">
           <h1>QUE CERTIFICADOS PODES ENCONTRAR</h1>
         </Col>
@@ -100,9 +100,9 @@ const Home = () => (
     </Container>
 
 
-    <Row className="restaurante-greenest">
+    <Row id="quero-ser-green" className="restaurante-greenest">
       <Container>
-        <h2>TORNA O TEU RESTAURANTE GREENEST</h2>
+        <h1>TORNA O TEU RESTAURANTE GREENEST</h1>
         <p>Se praticas boas práticas para tornares o teu restaurante mais sustentável e queres ter o teu restaurante como uma referência Greenest, então sabe mais como te podes juntar à nossa essência e clica em saber mais para fazer parte da nossa comunidade.</p>
         <div className="button-container">
           <Button>Saber Mais</Button>
@@ -110,9 +110,9 @@ const Home = () => (
       </Container>
     </Row>
 
-    <Row className="segue-restaurantes">
+    <Row id="app" className="segue-restaurantes">
       <Container>
-        <h2>SEGUE OS RESTAURANTES SUSTENTÁVEIS NA NOSSA APP</h2>
+        <h1>SEGUE OS RESTAURANTES SUSTENTÁVEIS NA NOSSA APP</h1>
 
         <Row>
 
@@ -130,11 +130,11 @@ const Home = () => (
     </Row>
 
 
-    <Row className="contacta-nos">
+    <Row id="contactos" className="contacta-nos">
       <Container>
         <Row>
         <Col xs lg="6">
-          <h2>CONTACTA-NOS!</h2>
+          <h1>CONTACTA-NOS!</h1>
         </Col>
 
         <Col xs lg="6">

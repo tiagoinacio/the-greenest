@@ -15,16 +15,20 @@ const Restaurant = ({ match: { params } }) => {
 
   return (
     <>
-      <Header />
-      <Container>
+      <Header theme="light" />
+      <Container className="restaurant-detail">
         <Row>
-          <div className="col-12 col-md-12 localizacao">
-            <h2 className="h-nome">{restaurant.name}</h2>
-            <h3 className="nome-localizaco">
-              <GeoAltFill />{restaurant.address}</h3>
+          <Col xs lg="12" className="localizacao">
+            <Col xs lg="6">
+              <h2 className="h-nome">{restaurant.name}</h2>
+              <h3 className="nome-localizaco">
+                <GeoAltFill />{restaurant.address}
+              </h3>
+            </Col>
+            <Col xs lg="6">
               <h2 className="rating">{restaurant.rating}</h2>
-
-          </div>
+            </Col>
+          </Col>
 
 
           <Carousel nextLabel="" prevLabel="">
@@ -45,13 +49,18 @@ const Restaurant = ({ match: { params } }) => {
             <div className="col-12 col-md-6"><h3 className="titulo-one">A NOSSA SUSTENTABILIDADE</h3></div>
             <div className="col-12 nossa-sustentabilidade-detalhes">{restaurant.description}
             </div><br />
-            <div className="col-12 col-md-3 nossa-sustentabilidade-detalhes">Certificados com:</div>
-            <br />
-            <div className="col-12 col-md-12">
-              {restaurant.certificates.map((certificate) => (
-                <img src={`/${certificate}.png`} alt={certificate} />
-              ))}
-            </div>
+
+            {restaurant.certificates.length ? (
+              <>
+                <div className="col-12 col-md-3 nossa-sustentabilidade-detalhes">Certificados com:</div>
+                <br />
+                <div className="col-12 col-md-12">
+                  {restaurant.certificates.map((certificate) => (
+                    <img src={`/${certificate}.png`} alt={certificate} />
+                  ))}
+                </div>
+              </>
+            ) : null}
           </div>
         </Row>
 

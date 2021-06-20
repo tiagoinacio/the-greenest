@@ -6,6 +6,10 @@
   margin-bottom: 2rem;
 }
 
+.restaurant-detail {
+  margin-top: 122px;
+}
+
 .nossa-sustentabilidade-detalhes, .horario-detalhe  {
   font-size: 1.563rem;
   font-family: 'BrandonText-Regular', sans-serif;
@@ -33,12 +37,13 @@
 .rating{
   background-color: #6b2e5c;
   color: #f5d647;
-  padding: 0.50rem;
-  border-radius: 60%;
+  padding: 1rem 0.5rem;
+  border-radius: 50%;
   width: 4rem;
+  margin: 0;
+  font-size: 1.7rem;
   text-align: center;
   float: right;
-  margin-top: -7rem;
   font-family: 'BrandonText-Regular', sans-serif;
 
 }
@@ -114,3 +119,5 @@ button {
     display: none;
   }
 }
+
+

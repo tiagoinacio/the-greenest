@@ -57,8 +57,9 @@
 .card-restaurante .card-imagem img{
   position: relative;
   width: 100%;
-  height: auto;
+  height: 20rem;
   margin-bottom: 0.5rem;
+  object-fit: cover;
 }
 
 .card-informacao .card-informacao-nome{
@@ -107,4 +108,8 @@
 .icone {
   padding-left: 20px;
   padding-bottom: 5px;
+}
+
+.restaurant-link {
+  text-decoration: none;
 }
