@@ -1,0 +1,40 @@
+
+@font-face {
+  font-family: 'BrandonText-Regular';
+  src: url('brandontext-regular-webfont.woff2') format('woff2'),
+       url('brandontext-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'BrandonText-Black';
+  src: url('brandontext-black-webfont.woff2') format('woff2'),
+       url('brandontext-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'BrandonText-Bold';
+  src: url('brandontext-bold-webfont.woff2') format('woff2'),
+       url('brandontext-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Crafter-Regular', sans-serif;
+  src: local('Crafter-Regular'), url(assets/fonts/Crafter-Regular.otf);
+}
+
+* {
+  font-family: BrandonText-Regular;
+}
+

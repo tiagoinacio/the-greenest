@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/the-greenest/static/css/main.b9dda342.chunk.css",
+    "main.js": "/the-greenest/static/js/main.6ce98e4a.chunk.js",
+    "main.js.map": "/the-greenest/static/js/main.6ce98e4a.chunk.js.map",
+    "runtime-main.js": "/the-greenest/static/js/runtime-main.44257860.js",
+    "runtime-main.js.map": "/the-greenest/static/js/runtime-main.44257860.js.map",
+    "static/js/2.a4a83143.chunk.js": "/the-greenest/static/js/2.a4a83143.chunk.js",
+    "static/js/2.a4a83143.chunk.js.map": "/the-greenest/static/js/2.a4a83143.chunk.js.map",
+    "static/js/3.bc4506ca.chunk.js": "/the-greenest/static/js/3.bc4506ca.chunk.js",
+    "static/js/3.bc4506ca.chunk.js.map": "/the-greenest/static/js/3.bc4506ca.chunk.js.map",
+    "index.html": "/the-greenest/index.html",
+    "static/css/main.b9dda342.chunk.css.map": "/the-greenest/static/css/main.b9dda342.chunk.css.map",
+    "static/js/2.a4a83143.chunk.js.LICENSE.txt": "/the-greenest/static/js/2.a4a83143.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/the-greenest/static/media/Crafter-Regular.1199a127.otf",
+    "static/media/android.dc305480.svg": "/the-greenest/static/media/android.dc305480.svg",
+    "static/media/at.16758ce9.svg": "/the-greenest/static/media/at.16758ce9.svg",
+    "static/media/facebook.7c69588f.svg": "/the-greenest/static/media/facebook.7c69588f.svg",
+    "static/media/instagram.c0113239.svg": "/the-greenest/static/media/instagram.c0113239.svg",
+    "static/media/ios.db1aa1a6.svg": "/the-greenest/static/media/ios.db1aa1a6.svg",
+    "static/media/logo.7f2f22e2.svg": "/the-greenest/static/media/logo.7f2f22e2.svg",
+    "static/media/mail.0bfc645a.svg": "/the-greenest/static/media/mail.0bfc645a.svg",
+    "static/media/Hero.css": "/the-greenest/static/media/padrao_hero_verde.c767e9d9.png",
+    "static/media/phone.b41aadf2.svg": "/the-greenest/static/media/phone.b41aadf2.svg",
+    "static/media/search.72280d95.svg": "/the-greenest/static/media/search.72280d95.svg",
+    "static/media/thegreenest01.7f96aedc.svg": "/the-greenest/static/media/thegreenest01.7f96aedc.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44257860.js",
+    "static/js/2.a4a83143.chunk.js",
+    "static/css/main.b9dda342.chunk.css",
+    "static/js/main.6ce98e4a.chunk.js"
+  ]
+}
