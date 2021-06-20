@@ -8,20 +8,27 @@ import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import restaurants from '../../restaurants';
 
+
 const Restaurant = ({ match: { params } }) => {
   const { id } = params;
   const restaurant = restaurants[id];
 
   return (
     <>
-      <Header />
-      <Container>
+      <Header theme="light" />
+      <Container className="restaurant-detail">
         <Row>
-          <div className="col-12 col-md-12 localizacao">
-            <h2 className="h-nome">{restaurant.name}</h2>
-            <h3 className="nome-localizaco">
-              <GeoAltFill />{restaurant.address}</h3>
-          </div>
+          <Col xs lg="12" className="localizacao">
+            <Col xs lg="6">
+              <h2 className="h-nome">{restaurant.name}</h2>
+              <h3 className="nome-localizaco">
+                <GeoAltFill />{restaurant.address}
+              </h3>
+            </Col>
+            <Col xs lg="6">
+              <h2 className="rating">{restaurant.rating}</h2>
+            </Col>
+          </Col>
 
 
           <Carousel nextLabel="" prevLabel="">
@@ -39,22 +46,27 @@ const Restaurant = ({ match: { params } }) => {
           </Carousel>
 
           <div className="nossa-sustentabilidade">
-            <div className="col-12 col-md-6"><h3 className="nome-localizaco">A NOSSA SUSTENTABILIDADE</h3></div>
+            <div className="col-12 col-md-6"><h3 className="titulo-one">A NOSSA SUSTENTABILIDADE</h3></div>
             <div className="col-12 nossa-sustentabilidade-detalhes">{restaurant.description}
             </div><br />
-            <div className="col-12 col-md-3 nossa-sustentabilidade-detalhes">Certificados com:</div>
-            <br />
-            <div className="col-12 col-md-12">
-              {restaurant.certificates.map((certificate) => (
-                <img src={`/${certificate}.png`} alt={certificate} />
-              ))}
-            </div>
+
+            {restaurant.certificates.length ? (
+              <>
+                <div className="col-12 col-md-3 nossa-sustentabilidade-detalhes">Certificados com:</div>
+                <br />
+                <div className="col-12 col-md-12">
+                  {restaurant.certificates.map((certificate) => (
+                    <img src={`/${certificate}.png`} alt={certificate} />
+                  ))}
+                </div>
+              </>
+            ) : null}
           </div>
         </Row>
 
         <Row>
           <div className="col-12 nome-localizaco">
-            <h3 className="nome-localizaco">HORÁRIO</h3>
+            <h3 className="nome-horario">HORÁRIO</h3>
           </div>
           <div className="horario-detalhe">
             {
@@ -85,7 +97,7 @@ const Restaurant = ({ match: { params } }) => {
         </Row>
 
         <div className="comentarios">
-          <div className="col-12 col-md-12"><h3 className="nome-localizaco">COMENTÁRIOS</h3></div>
+          <div className="col-12 col-md-12"><h3 className="nome-comentario">COMENTÁRIOS</h3></div>
           {
             restaurant.comments.map(comment => (
               <div className="col-12">
@@ -100,7 +112,7 @@ const Restaurant = ({ match: { params } }) => {
           <div className="col-12 col-md-6 offset-md-5">
             <button>Mostrar mais</button>
           </div>  <br />
-          <div className="col-12 col-md-6 offset-md-6">
+          <div className="col-12 col-md-6 offset-md-6 numeracao">
             4/12
           </div>
         </div>

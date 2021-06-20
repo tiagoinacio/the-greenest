@@ -1,6 +1,10 @@
 .home-title {
   margin-top: 60px;
   margin-bottom: 60px;
+ 
+}
+.home-title div h1{
+  font-family: 'BrandonText-Black', sans-serif;
 }
 
 .home {
@@ -15,6 +19,23 @@ h5 {
 .mission-vision {
   padding-bottom: 40px;
 }
+.mission-vision div h5{
+
+  font-family: 'BrandonText-Regular', sans-serif;
+  font-size: 25px;
+}
+.mission-vision-dital{
+
+  font-family: 'BrandonText-Regular', sans-serif;
+  font-size: 25px;
+
+}
+.mission-vision-dital-certificados{
+
+  font-family: 'BrandonText-Regular', sans-serif;
+  font-size: 20px;
+
+}
 
 .container {
   max-width: 950px !important;
@@ -22,6 +43,14 @@ h5 {
 
 .certificados {
   margin: 90px 0 50px 0;
+}
+
+.certificados > div {
+  padding: 0;
+}
+
+h1{
+  font-family: 'BrandonText-Black', sans-serif;
 }
 
 .certificados-logo {
@@ -39,7 +68,7 @@ h5 {
   background-color: #F1E4E8;
 }
 
-.restaurante-greenest h2 {
+.restaurante-greenest h1 {
   max-width: 380px;
   margin-bottom: 30px;
 }
@@ -64,7 +93,7 @@ h5 {
   background-color: #F5CF47;
 }
 
-.segue-restaurantes h2 {
+.segue-restaurantes h1 {
   max-width: 380px;
   margin-bottom: 30px;
 }

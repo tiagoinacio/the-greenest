@@ -1,6 +1,23 @@
 .header {
-  background-color: #02B789;
   padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.header.dark {
+  background-color: #02B789;
+}
+
+.header.light svg {
+  fill: #00B87B;
+  stroke: #00B87B;
 }
 
 .header-links .navbar {
@@ -16,4 +33,8 @@
 .header-text {
   font-size: 30px;
   max-width: 470px;
+}
+
+.logo-link a {
+  padding: 0;
 }
