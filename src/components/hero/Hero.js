@@ -3,6 +3,7 @@ import { Container, Row, Form } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import './Hero.css';
 import restaurants from '../../restaurants';
+import { ReactComponent as Search } from '../../assets/svgs/search.svg';
 
 const Hero = () => {
   const [selected, setSelected] = useState(null);
@@ -39,6 +40,7 @@ const Hero = () => {
         </Row>
         <Row>
           <div className="hero-search">
+            <Search/>
             <Form.Group>
               <Typeahead
                 emptyLabel=""

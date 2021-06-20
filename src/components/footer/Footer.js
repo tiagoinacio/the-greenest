@@ -26,7 +26,7 @@ const Footer = () => {
               <FormControl id="inlineFormInputGroup" placeholder="Email" />
               <InputGroup.Append>
 
-                <Button type="submit" className="mb-2">
+                <Button type="submit" className="button-footer mb-2">
                   Submeter
                 </Button>
 

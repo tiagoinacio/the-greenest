@@ -2,21 +2,52 @@
   width: 20px;
   height: 20px;
 }
+.localizacao{
+  margin-bottom: 2rem;
+}
 
-.nossa-sustentabilidade-detalhes, .horario-detalhe, .comentario-detalhe {
+.nossa-sustentabilidade-detalhes, .horario-detalhe  {
   font-size: 1.563rem;
+  font-family: 'BrandonText-Regular', sans-serif;
+}
+.comentario-detalhe{
+  font-size: 1.563rem;
+  font-family: 'BrandonText-Regular', sans-serif;
+  margin-bottom: 1rem;
 }
 
 .h-nome {
   font-size: 2.188rem;
+  margin-top:2rem;
+  font-family: 'BrandonText-Black', sans-serif;
 }
 
 .nome-localizaco, .name-comentarios {
   font-size: 1.875rem;
+  font-family: 'BrandonText-Regular', sans-serif;
+}
+.numeracao{
+  font-family: 'BrandonText-Regular', sans-serif;
+   margin-bottom: 5rem;
+}
+.rating{
+  background-color: #6b2e5c;
+  color: #f5d647;
+  padding: 0.50rem;
+  border-radius: 60%;
+  width: 4rem;
+  text-align: center;
+  float: right;
+  margin-top: -7rem;
+  font-family: 'BrandonText-Regular', sans-serif;
+
 }
 
 .nome-localizaco svg {
-  fill: #6B2E4A;
+  fill: #646464;
+  width: 1.70rem;
+  margin-right: 1rem;
+  margin-top: -0.12rem;
 }
 
 button {
@@ -28,14 +59,58 @@ button {
   color: #ffffff;
   border-radius: 10px;
   border: 0px;
+  box-shadow: 0px 4px 10px #8D8D8D;
+  font-family: 'BrandonText-Regular', sans-serif;
 }
 
 .localizacao-comentario {
   font-size: 1.375rem;
+  font-family: 'BrandonText-Regular', sans-serif;
+  margin-bottom: 1rem;
 }
+
+.nome-localizaco{
+  margin-bottom: 2.10rem;
+}
+.titulo-one{
+  font-size: 1.875rem;
+  font-family: 'BrandonText-Black', sans-serif;
+  margin-top: 3.50rem;
+  margin-bottom: 1rem;
+
+}
+.button-footer{
+  border: 0px;
+}
+.nome-horario{
+  margin-top: 5rem;
+  font-size: 1.875rem;
+  font-family: 'BrandonText-Black', sans-serif;
+}
+.nome-comentario{
+  margin-top: 5rem;
+  font-size: 1.875rem;
+  font-family: 'BrandonText-Black', sans-serif;
+  margin-bottom: 1.50rem;
+}
+.horario-detalhe{
+  font-family: 'BrandonText-Regular', sans-serif;
+}
+.horario-detalhe div{
+  margin-bottom:0.50rem;
+  font-family: 'BrandonText-Regular', sans-serif;
+}
+
+.hero-text{
+  font-family: 'BrandonText-Black', sans-serif;
+}
+
 
 @media (max-width: 577px) {
   .horario {
+    display: none;
+  }
+  .rating{
     display: none;
   }
 }

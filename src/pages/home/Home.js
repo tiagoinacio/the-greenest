@@ -46,12 +46,12 @@ const Home = () => (
           </Row>
 
           <Row>
-            <Col xs lg="6">
+            <Col className="mission-vision-dital" xs lg="6">
               Sustentabilidade - Comer hoje sem comprometer o amanhã<br />
               Comunidade - Envolver e dar voz à nossa tribo<br />
               Sensibilização - Tornar consciente as nossas escolhas na alimentação.
             </Col>
-            <Col xs lg="6">
+            <Col className="mission-vision-dital" xs lg="6">
               Através de uma plataforma fácil e intuitiva conectamos pessoas e estabelecimentos do ramo alimentar com práticas orientadas para sustentáveis.
             </Col>
           </Row>
@@ -65,7 +65,7 @@ const Home = () => (
       </Row>
 
       <Row>
-        <Col xs lg="12">
+        <Col className="mission-vision-dital" xs lg="12">
           Alguns dos restaurantes destinguem-se com a aplicação de certificados que dão 100% confiança na sua qualidade e no seu empenho para a sustentabilidade.
         </Col>
       </Row>
@@ -75,7 +75,7 @@ const Home = () => (
           <Row>
             <img src="/apcer.png" alt="Associação Portuguesa de Certificação"></img>
           </Row>
-          <p>
+          <p className="smission-vision-dital-certificados">
             Associação Portuguesa de Certificação
           </p>
         </Col>
@@ -83,7 +83,7 @@ const Home = () => (
           <Row>
             <img src="/cert02.png" alt="Certificação Agricultura Biológica"></img>
           </Row>
-          <p>
+          <p className="mission-vision-dital-certificados">
             Certificação Agricultura Biológica
           </p>
         </Col>
@@ -91,7 +91,7 @@ const Home = () => (
           <Row>
             <img src="/green-globe.png" alt="Certificação Planeta Verde"></img>
           </Row>
-          <p>
+          <p className="mission-vision-dital-certificados">
             Certificação Planeta Verde
           </p>
         </Col>

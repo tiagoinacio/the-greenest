@@ -1,6 +1,10 @@
 .home-title {
   margin-top: 60px;
   margin-bottom: 60px;
+ 
+}
+.home-title div h1{
+  font-family: 'BrandonText-Black', sans-serif;
 }
 
 .home {
@@ -15,6 +19,23 @@ h5 {
 .mission-vision {
   padding-bottom: 40px;
 }
+.mission-vision div h5{
+
+  font-family: 'BrandonText-Regular', sans-serif;
+  font-size: 25px;
+}
+.mission-vision-dital{
+
+  font-family: 'BrandonText-Regular', sans-serif;
+  font-size: 25px;
+
+}
+.mission-vision-dital-certificados{
+
+  font-family: 'BrandonText-Regular', sans-serif;
+  font-size: 20px;
+
+}
 
 .container {
   max-width: 950px !important;
@@ -22,6 +43,10 @@ h5 {
 
 .certificados {
   margin: 90px 0 50px 0;
+}
+
+.certificados div h1{
+  font-family: 'BrandonText-Black', sans-serif;
 }
 
 .certificados-logo {
