@@ -11,7 +11,7 @@ const Header = ({ theme = 'dark' }) => {
         <Row className="header-content">
           <Col xs lg="3">
             <Nav className="mr-auto logo-link">
-              <Nav.Link href="/#root">
+              <Nav.Link href="/the-greenest/#root">
                 <Logo width="233"
                   height="62" className="d-inline-block align-top" />
               </Nav.Link>
@@ -20,12 +20,12 @@ const Header = ({ theme = 'dark' }) => {
           <Col xs lg="9" className="header-links">
             <Navbar>
               <Nav className="mr-auto">
-                <Nav.Link href="/#sobre-nos">Sobre Nós</Nav.Link>
-                <Nav.Link href="/#certificados">Certificados</Nav.Link>
-                <Nav.Link href="/#quero-ser-green">Quero Ser Green</Nav.Link>
-                <Nav.Link href="/#app">App</Nav.Link>
-                <Nav.Link href="/#contactos">Contactos</Nav.Link>
-                <Nav.Link href="/login">Login</Nav.Link>
+                <Nav.Link href="/the-greenest/#sobre-nos">Sobre Nós</Nav.Link>
+                <Nav.Link href="/the-greenest/#certificados">Certificados</Nav.Link>
+                <Nav.Link href="/the-greenest/#quero-ser-green">Quero Ser Green</Nav.Link>
+                <Nav.Link href="/the-greenest/#app">App</Nav.Link>
+                <Nav.Link href="/the-greenest/#contactos">Contactos</Nav.Link>
+                <Nav.Link href="/the-greenest/login">Login</Nav.Link>
               </Nav>
             </Navbar>
           </Col>

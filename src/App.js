@@ -13,9 +13,6 @@ function App() {
     <div className="app">
       <Router>
         <Switch>
-          <Route path="/login">
-            <div>Login</div>
-          </Route>
           <Route path="/search/:location">
             <Search />
           </Route>
@@ -23,6 +20,15 @@ function App() {
             <Restaurant />
           </Route>
           <Route path="/">
+            <Home />
+          </Route>
+          <Route path="/the-greenest/search/:location">
+            <Search />
+          </Route>
+          <Route path="/the-greenest/restaurants/:id">
+            <Restaurant />
+          </Route>
+          <Route path="/the-greenest/">
             <Home />
           </Route>
         </Switch>

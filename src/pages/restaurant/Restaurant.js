@@ -56,7 +56,7 @@ const Restaurant = ({ match: { params } }) => {
                 <br />
                 <div className="col-12 col-md-12">
                   {restaurant.certificates.map((certificate) => (
-                    <img src={`/${certificate}.png`} alt={certificate} />
+                    <img src={`/the-greenest/${certificate}.png`} alt={certificate} />
                   ))}
                 </div>
               </>

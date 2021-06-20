@@ -73,7 +73,7 @@ const Home = () => (
       <Row className="certificados-logo">
         <Col xs lg="4">
           <Row>
-            <img src="/apcer.png" alt="Associação Portuguesa de Certificação"></img>
+            <img src="/the-greenest/apcer.png" alt="Associação Portuguesa de Certificação"></img>
           </Row>
           <p className="smission-vision-dital-certificados">
             Associação Portuguesa de Certificação
@@ -81,7 +81,7 @@ const Home = () => (
         </Col>
         <Col xs lg="4">
           <Row>
-            <img src="/cert02.png" alt="Certificação Agricultura Biológica"></img>
+            <img src="/the-greenest/cert02.png" alt="Certificação Agricultura Biológica"></img>
           </Row>
           <p className="mission-vision-dital-certificados">
             Certificação Agricultura Biológica
@@ -89,7 +89,7 @@ const Home = () => (
         </Col>
         <Col xs lg="4">
           <Row>
-            <img src="/green-globe.png" alt="Certificação Planeta Verde"></img>
+            <img src="/the-greenest/green-globe.png" alt="Certificação Planeta Verde"></img>
           </Row>
           <p className="mission-vision-dital-certificados">
             Certificação Planeta Verde
