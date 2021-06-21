@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/the-greenest/static/css/main.061baf27.chunk.css",
-    "main.js": "/the-greenest/static/js/main.35ba77ce.chunk.js",
-    "main.js.map": "/the-greenest/static/js/main.35ba77ce.chunk.js.map",
+    "main.css": "/the-greenest/static/css/main.7b2283b6.chunk.css",
+    "main.js": "/the-greenest/static/js/main.f896e5a0.chunk.js",
+    "main.js.map": "/the-greenest/static/js/main.f896e5a0.chunk.js.map",
     "runtime-main.js": "/the-greenest/static/js/runtime-main.f322d7a3.js",
     "runtime-main.js.map": "/the-greenest/static/js/runtime-main.f322d7a3.js.map",
     "static/js/2.ef639a9b.chunk.js": "/the-greenest/static/js/2.ef639a9b.chunk.js",
@@ -10,25 +10,24 @@
     "static/js/3.4245d524.chunk.js": "/the-greenest/static/js/3.4245d524.chunk.js",
     "static/js/3.4245d524.chunk.js.map": "/the-greenest/static/js/3.4245d524.chunk.js.map",
     "index.html": "/the-greenest/index.html",
-    "static/css/main.061baf27.chunk.css.map": "/the-greenest/static/css/main.061baf27.chunk.css.map",
+    "static/css/main.7b2283b6.chunk.css.map": "/the-greenest/static/css/main.7b2283b6.chunk.css.map",
     "static/js/2.ef639a9b.chunk.js.LICENSE.txt": "/the-greenest/static/js/2.ef639a9b.chunk.js.LICENSE.txt",
     "static/media/App.css": "/the-greenest/static/media/Crafter-Regular.1199a127.otf",
     "static/media/android.dc305480.svg": "/the-greenest/static/media/android.dc305480.svg",
     "static/media/at.16758ce9.svg": "/the-greenest/static/media/at.16758ce9.svg",
     "static/media/facebook.7c69588f.svg": "/the-greenest/static/media/facebook.7c69588f.svg",
     "static/media/instagram.c0113239.svg": "/the-greenest/static/media/instagram.c0113239.svg",
-    "static/media/ios.db1aa1a6.svg": "/the-greenest/static/media/ios.db1aa1a6.svg",
     "static/media/logo.0b51a4c5.svg": "/the-greenest/static/media/logo.0b51a4c5.svg",
     "static/media/mail.0bfc645a.svg": "/the-greenest/static/media/mail.0bfc645a.svg",
     "static/media/Hero.css": "/the-greenest/static/media/padrao_hero_verde.c767e9d9.png",
     "static/media/phone.b41aadf2.svg": "/the-greenest/static/media/phone.b41aadf2.svg",
     "static/media/search.72280d95.svg": "/the-greenest/static/media/search.72280d95.svg",
-    "static/media/thegreenest01.ed8ccebd.svg": "/the-greenest/static/media/thegreenest01.ed8ccebd.svg"
+    "static/media/thegreenest01.198c87ea.svg": "/the-greenest/static/media/thegreenest01.198c87ea.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f322d7a3.js",
     "static/js/2.ef639a9b.chunk.js",
-    "static/css/main.061baf27.chunk.css",
-    "static/js/main.35ba77ce.chunk.js"
+    "static/css/main.7b2283b6.chunk.css",
+    "static/js/main.f896e5a0.chunk.js"
   ]
 }
