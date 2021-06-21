@@ -7,7 +7,6 @@ import Carousel from '../../components/carousel/Carousel';
 import './Home.css';
 import { ReactComponent as Logo } from '../../assets/svgs/thegreenest01.svg';
 import { ReactComponent as Android } from '../../assets/svgs/android.svg';
-import { ReactComponent as IOS } from '../../assets/svgs/ios.svg';
 import { ReactComponent as At } from '../../assets/svgs/at.svg';
 import { ReactComponent as Phone } from '../../assets/svgs/phone.svg';
 import { ReactComponent as Email } from '../../assets/svgs/mail.svg';
@@ -121,7 +120,7 @@ const Home = () => (
           </Col>
           <Col xs lg="2" />
           <Col xs lg="5" className="mobile-platforms">
-            <Row><IOS /></Row>
+            <Row><img src="/the-greenest/ios.png" alt="iOS"></img></Row>
             <Row><Android /></Row>
           </Col>
 

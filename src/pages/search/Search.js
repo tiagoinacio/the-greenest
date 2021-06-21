@@ -43,10 +43,12 @@ const Search = ({ match: { params } }) => {
     { value: 'Biológico', label: 'Biológico' },
   ];
   const cousineOptions = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
+    { value: 'Saudável', label: 'Saudável' },
+    { value: 'Europeia', label: 'Europeia' },
+    { value: 'Mediterrânea', label: 'Mediterrânea' },
+    { value: 'Internacional', label: 'Internacional' }
   ];
+
 
   const onCertificateChange = (e) => {
     setCertificatesFilter(e);

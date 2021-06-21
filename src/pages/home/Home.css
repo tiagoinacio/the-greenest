@@ -100,7 +100,7 @@ h1{
 
 .segue-restaurantes h1 {
   max-width: 380px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .mobile-platforms {
@@ -109,8 +109,14 @@ h1{
   justify-content: space-between;
 }
 
-.mobile-platforms svg {
+.mobile-platforms svg, .mobile-platforms img {
   max-height: 100px;
+}
+.mobile-platforms img {
+  width: auto;
+}
+.mobile-platforms > .row {
+  justify-content: center;
 }
 
 .contacta-nos {
