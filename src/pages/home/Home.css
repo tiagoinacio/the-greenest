@@ -75,6 +75,11 @@ h1{
 
 .restaurante-greenest p {
   margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.home .btn-primary {
+  border-color: transparent;
 }
 
 .restaurante-greenest .button-container {

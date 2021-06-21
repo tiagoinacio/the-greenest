@@ -15,9 +15,8 @@
   background-color: #02B789;
 }
 
-.header.light svg {
+.header.light svg path {
   fill: #00B87B;
-  stroke: #00B87B;
 }
 
 .header-links .navbar {

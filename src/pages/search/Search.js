@@ -28,7 +28,7 @@ const Search = ({ match: { params } }) => {
   const [restaurantsFilter, setRestaurantsFilter] = useState([]);
   const [cousineFilters, setCousinesFilter] = useState([]);
   const [certificatesFilter, setCertificatesFilter] = useState([]);
-
+  console.log(defaultList);
   const numberOfResultsToShow = 4;
   const numberOfRestaurants = list.length;
   const certificateOptions = [
@@ -98,6 +98,7 @@ const Search = ({ match: { params } }) => {
       </components.DropdownIndicator>
     );
   };
+  let restaurantIndex = 0;
 
   return (
     <>
@@ -142,44 +143,45 @@ const Search = ({ match: { params } }) => {
           }
 
           {
-            numberOfRestaurants ? [Math.round(numberOfRestaurants / 2)].map((_, index) => {
+            numberOfRestaurants ? [...Array(Math.ceil(numberOfRestaurants / 2))].map((_, index) => {
+              restaurantIndex += 1;
               return (
                 <Row>
                   <Col md lg="6">
-                    <a className="restaurant-link" href={`/the-greenest/restaurants/${list[index].id}`}>
+                    <a className="restaurant-link" href={`/the-greenest/restaurants/${list[index + restaurantIndex -1 ].id}`}>
                       <div className="card-restaurante">
                         <div className="card-imagem">
-                          <img src={list[index].images[0]} alt="season" />
+                          <img src={list[index+ restaurantIndex -1].images[0]} alt="season" />
                         </div>
                         <div className="card-informacao">
                           <div className="card-informacao-nome">
-                            {list[index].name}
+                            {list[index+ restaurantIndex-1].name}
                           </div>
                           <div className="card-informacao-detalhe">
-                            {list[index].address}
+                            {list[index+ restaurantIndex-1].address}
                             <br />
-                            {list[index].cousine.map(type => <>{type}<br /></>)}
-                            {list[index].rating} (cotação)
+                            {list[index+ restaurantIndex-1].cousine.map(type => <>{type}<br /></>)}
+                            {list[index+ restaurantIndex-1].rating} (cotação)
                           </div>
                         </div>
                       </div>
                     </a>
                   </Col>
-                  {list[index + 1] ? <Col md lg="6">
-                    <a className="restaurant-link" href={`/the-greenest/restaurants/${list[index + 1].id}`}>
+                  {list[index + restaurantIndex] ? <Col md lg="6">
+                    <a className="restaurant-link" href={`/the-greenest/restaurants/${list[index + restaurantIndex].id}`}>
                       <div className="card-restaurante">
                         <div className="card-imagem">
-                          <img src={list[index + 1].images[0]} alt="season" />
+                          <img src={list[index +restaurantIndex].images[0]} alt="season" />
                         </div>
                         <div className="card-informacao">
                           <div className="card-informacao-nome">
-                            {list[index + 1].name}
+                            {list[index + restaurantIndex].name}
                           </div>
                           <div className="card-informacao-detalhe">
-                            {list[index + 1].address}
+                            {list[index + restaurantIndex].address}
                             <br />
-                            {list[index + 1].cousine.map(type => <>{type}<br /></>)}
-                            {list[index + 1].rating} (cotação)
+                            {list[index + restaurantIndex].cousine.map(type => <>{type}<br /></>)}
+                            {list[index + restaurantIndex].rating} (cotação)
                           </div>
                         </div>
                       </div>
