@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/the-greenest/static/css/main.7b2283b6.chunk.css",
-    "main.js": "/the-greenest/static/js/main.f896e5a0.chunk.js",
-    "main.js.map": "/the-greenest/static/js/main.f896e5a0.chunk.js.map",
+    "main.css": "/the-greenest/static/css/main.222268ef.chunk.css",
+    "main.js": "/the-greenest/static/js/main.8464c4bf.chunk.js",
+    "main.js.map": "/the-greenest/static/js/main.8464c4bf.chunk.js.map",
     "runtime-main.js": "/the-greenest/static/js/runtime-main.f322d7a3.js",
     "runtime-main.js.map": "/the-greenest/static/js/runtime-main.f322d7a3.js.map",
     "static/js/2.ef639a9b.chunk.js": "/the-greenest/static/js/2.ef639a9b.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.4245d524.chunk.js": "/the-greenest/static/js/3.4245d524.chunk.js",
     "static/js/3.4245d524.chunk.js.map": "/the-greenest/static/js/3.4245d524.chunk.js.map",
     "index.html": "/the-greenest/index.html",
-    "static/css/main.7b2283b6.chunk.css.map": "/the-greenest/static/css/main.7b2283b6.chunk.css.map",
+    "static/css/main.222268ef.chunk.css.map": "/the-greenest/static/css/main.222268ef.chunk.css.map",
     "static/js/2.ef639a9b.chunk.js.LICENSE.txt": "/the-greenest/static/js/2.ef639a9b.chunk.js.LICENSE.txt",
     "static/media/App.css": "/the-greenest/static/media/Crafter-Regular.1199a127.otf",
     "static/media/android.dc305480.svg": "/the-greenest/static/media/android.dc305480.svg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.f322d7a3.js",
     "static/js/2.ef639a9b.chunk.js",
-    "static/css/main.7b2283b6.chunk.css",
-    "static/js/main.f896e5a0.chunk.js"
+    "static/css/main.222268ef.chunk.css",
+    "static/js/main.8464c4bf.chunk.js"
   ]
 }
