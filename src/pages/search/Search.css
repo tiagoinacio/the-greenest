@@ -128,6 +128,8 @@
   box-shadow: 0px 4px 10px #8D8D8D;
   background-color: #6B2E5C;
   padding: .5rem 1.5rem;
+  color: white;
+  text-decoration: none;
 }
 
 .numero-resultado{

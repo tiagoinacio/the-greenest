@@ -206,6 +206,14 @@ const Search = ({ match: { params } }) => {
             </div>
           </>
           : null}
+          <>
+            <div className="botao-mais">
+              <a href="#">Mostrar mais</a>
+            </div>
+            <div className="numero-resultado">
+              {numberOfResultsToShow}/16
+            </div>
+          </>
       </div>
 
 
