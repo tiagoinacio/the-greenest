@@ -1,7 +1,7 @@
 .home-title {
   margin-top: 60px;
   margin-bottom: 60px;
- 
+
 }
 
 .home {
@@ -63,6 +63,8 @@ h1{
   padding: 116px 0;
   display: flex;
   background-color: #F1E4E8;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .restaurante-greenest h1 {
@@ -93,6 +95,8 @@ h1{
 .segue-restaurantes {
   padding: 116px 0;
   background-color: #F5CF47;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .segue-restaurantes h1 {
@@ -121,6 +125,8 @@ h1{
 
 .contacta-nos {
   padding: 116px 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .contacts-row {
