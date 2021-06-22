@@ -147,4 +147,18 @@
 
 .restaurant-link {
   text-decoration: none;
+  position: relative;
+}
+
+.restaurant-link .certificates {
+  position: absolute;
+  z-index: 9;
+  top: 20px;
+  width: 28rem;
+  text-align: right;
+}
+
+.restaurant-link img.certificate {
+  max-width: 100px;
+  height: auto;
 }

@@ -150,20 +150,27 @@ const Search = ({ match: { params } }) => {
               return (
                 <Row>
                   <Col md lg="6">
-                    <a className="restaurant-link" href={`/the-greenest/restaurants/${list[index + restaurantIndex -1 ].id}`}>
+                    <a className="restaurant-link" href={`/the-greenest/restaurants/${list[index + restaurantIndex - 1].id}`}>
                       <div className="card-restaurante">
                         <div className="card-imagem">
-                          <img src={list[index+ restaurantIndex -1].images[0]} alt="season" />
+                          <img src={list[index + restaurantIndex - 1].images[0]} alt="season" />
+                          <div className="certificates col-6">
+                            {
+                              list[index + restaurantIndex - 1].certificates.map((certificate) => (
+                                <img className="certificate" src={`/the-greenest/${certificate}.png`} alt="Certificação"></img>
+                              ))
+                            }
+                          </div>
                         </div>
                         <div className="card-informacao">
                           <div className="card-informacao-nome">
-                            {list[index+ restaurantIndex-1].name}
+                            {list[index + restaurantIndex - 1].name}
                           </div>
                           <div className="card-informacao-detalhe">
-                            {list[index+ restaurantIndex-1].address}
+                            {list[index + restaurantIndex - 1].address}
                             <br />
-                            {list[index+ restaurantIndex-1].cousine.map(type => <>{type}<br /></>)}
-                            {list[index+ restaurantIndex-1].rating} (cotação)
+                            {list[index + restaurantIndex - 1].cousine.map(type => <>{type}<br /></>)}
+                            {list[index + restaurantIndex - 1].rating} (cotação)
                           </div>
                         </div>
                       </div>
@@ -173,7 +180,14 @@ const Search = ({ match: { params } }) => {
                     <a className="restaurant-link" href={`/the-greenest/restaurants/${list[index + restaurantIndex].id}`}>
                       <div className="card-restaurante">
                         <div className="card-imagem">
-                          <img src={list[index +restaurantIndex].images[0]} alt="season" />
+                          <img src={list[index + restaurantIndex].images[0]} alt="season" />
+                          <div className="certificates col-6">
+                            {
+                              list[index + restaurantIndex].certificates.map((certificate) => (
+                                <img className="certificate" src={`/the-greenest/${certificate}.png`} alt="Certificação"></img>
+                              ))
+                            }
+                          </div>
                         </div>
                         <div className="card-informacao">
                           <div className="card-informacao-nome">
@@ -206,14 +220,14 @@ const Search = ({ match: { params } }) => {
             </div>
           </>
           : null}
-          <>
-            <div className="botao-mais">
-              <a href="#">Mostrar mais</a>
-            </div>
-            <div className="numero-resultado">
-              {numberOfResultsToShow}/16
-            </div>
-          </>
+        <>
+          <div className="botao-mais">
+            <a href="#">Mostrar mais</a>
+          </div>
+          <div className="numero-resultado">
+            {numberOfResultsToShow}/16
+          </div>
+        </>
       </div>
 
 

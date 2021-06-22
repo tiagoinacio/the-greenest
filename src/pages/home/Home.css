@@ -3,9 +3,6 @@
   margin-bottom: 60px;
  
 }
-.home-title div h1{
-  font-family: 'BrandonText-Black', sans-serif;
-}
 
 .home {
   font-size: 1.3rem;
@@ -111,7 +108,10 @@ h1{
 
 .mobile-platforms svg, .mobile-platforms img {
   max-height: 100px;
+  cursor: pointer;
+  top: 445px;
 }
+
 .mobile-platforms img {
   width: auto;
 }

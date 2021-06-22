@@ -1,0 +1,7 @@
+.carousel-caption {
+  font-size: calc(1.375rem + 1.5vw);
+  font-family: BrandonText-Black;
+  max-width: 20rem;
+  left: 5%;
+  text-align: left;
+}
